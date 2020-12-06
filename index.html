@@ -1,0 +1,442 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>Employable</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    </head>
+    <style type="text/css">
+    	    	:root{
+    		color:white;
+    		padding: 0;
+    		margin:0;
+    		box-sizing: border-box;
+    		
+    	}
+    	*{
+    	/*border:2px solid red;*/
+
+    	}
+      body{
+        overflow-x: hidden;
+      }
+      #nav2{
+        display: none;
+      }
+    	.parl img{
+    	object-fit: cover;
+    	width:100vw;
+    	height: 80vh;
+    	}
+    	main{
+    		position: absolute;
+    		top:0;
+    		left:0;
+        overflow-x: hidden;
+    	}
+    	header{
+    		display:grid;
+           grid-template-areas: "Logo . Nav";
+           width: 100vw;
+          align-items: center;
+          background-color: rgba(0,0,0,.5);
+          height: 20vh;
+              	}
+    
+    	ul{
+    		display: flex;
+    		align-items: center;
+    		justify-content: center;
+    	}
+    	header h2{
+    		grid-area:Logo;
+    		color:wheat;
+    		padding-left: 40px;
+    	}
+    	.navi{
+    		grid-area: Nav;
+    		 background-color: #ffffff00;
+    	}
+    	main #first-sections{
+    		display: flex;
+    		padding: 40px;
+    		height: 60vh;
+        background-color: rgba(0,0,0,.5);
+        overflow-x: hidden;
+    	}
+      .parl{
+        height: 80vh;
+        overflow-x: hidden;
+      }
+      
+    	.landing p{
+    		padding: 20px 0 20px 0;
+    		width:280px;
+    	}
+    	.a-first{
+    		padding: 20px;
+    		color:white;
+    		text-decoration: none;
+    		background-color: crimson;
+    		border-radius:4px;
+        overflow-x: hidden;
+    	}
+      footer{
+        padding: 1.3rem;
+      }
+
+     
+        .a{
+          padding: 20px;
+            color:white;
+            text-decoration: none;
+            background-color: crimson;
+            border-radius:4px;
+            display: inline;
+          margin-left: -180px;
+                 }
+                 #section-2{
+                  background:white;
+                  overflow-x: hidden;
+                 }
+            	#middle-section{
+                overflow-x: hidden;
+    		display: grid;
+    		grid-template-columns: 2fr 2fr;
+    		grid-template-areas: "div1 div2"
+    		                     "div3 div4"
+    		                     "div5 div6";
+            grid-template-rows: 500px;
+    		 width:100vw;
+    		 overflow-x: hidden;
+             justify-content: center;
+             text-align: center;
+    		grid-gap: 25px;
+    	}
+    	#section-2:not(#middle-section){
+            text-align: center;
+    	}
+        #section-2 div{
+            padding: 40px;
+        }
+      
+        #section-2 p{
+            color:black;
+            width:400px;
+        }
+        #section-2 #middle-section p,#section-2 #middle-section h4{
+            text-align: left;
+            padding:20px;
+            margin:auto;
+            width:400px;
+        }
+        .a-d{
+            width: 400px;
+            margin:auto;
+        }
+        #middle-section p{
+            margin-bottom: 20px;
+        }
+        #section-2-header p{
+            margin:auto;
+            width:80%;
+        }
+        #section-2 img{
+            object-fit: contain;
+            width:500px;
+            height: 450px;
+        }
+    	#div1{
+    		grid-area: div1;
+    	}
+    	#div2{
+    		grid-area: div2;
+    	}
+    	#div3{
+    		grid-area: div3;
+    	}
+    	#div4{
+    		grid-area: div4;
+    	}
+
+    	#div5{
+    		grid-area: div5;
+    	}
+    	#div6{
+    		grid-area: div6;
+    	}
+    	.color1{
+    		color:orange;
+    	}
+    	  	.color2{
+    		color:lightblue;
+    	}
+      .cover-p{
+        position:fixed;
+        top:0;
+        left:0;
+        height: 80vh;
+      }
+
+footer{
+  background-color: #200;
+  padding: 25px;
+  min-height: 100vh;
+}
+@media(max-width:900px ){
+   header{
+        display:grid;
+           grid-template-areas: "Logo"
+                                " Nav";
+           width: 100vw;
+          align-items: center;
+          background-color: rgba(0,0,0,.5);
+            }
+             nav{
+        display: block;
+        width:70vw;
+      }
+       
+      #nav2{
+        display: none;
+       grid-area: Nav;
+       padding: 5px 0px 15px 30px;
+       color:white;
+      }
+      #middle-section{
+        display: grid;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-areas: "div1" 
+                              "div2"
+                             "div3"
+                             "div4"
+                             "div5"
+                             "div6";
+            grid-template-rows: 400px;
+         width:100vw;
+         overflow-x: hidden;
+             justify-content: center;
+             text-align: center;
+        grid-gap: 25px;
+      }
+}
+@media (max-width: 800px){
+  *{
+    
+  }
+  header{
+        display:grid;
+           grid-template-areas: "Logo"
+                                " Nav";
+           width: 100vw;
+          align-items: center;
+          background-color: rgba(0,0,0,.5);
+            }
+            .landing{
+              
+              margin-top: 30px;
+            }
+      .landing h4{
+        height: 40px;
+        font-size: 2em;
+        margin-top: 30px;
+      }
+      nav{
+        display: none;
+      }
+      #nav2{
+        display: block;
+       grid-area: Nav;
+       padding: 5px 0px 15px 30px;
+       color:white;
+      }
+      #nav2 a{
+        padding: 5px 5px 5px 5px;
+       color:white;
+      }
+      #middle-section{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-areas: "div1" 
+                              "div2"
+                             "div3"
+                             "div4"
+                             "div5"
+                             "div6";
+            grid-template-rows: 400px;
+         width:100vw;
+         overflow-x: hidden;
+             justify-content: center;
+             text-align: center;
+        grid-gap: 25px;
+      }
+      #first-sections{
+
+      }
+      #section-2 img{
+            object-fit: contain;
+            width:300px;
+            height: 350px;
+        }
+         .a{
+          padding: 20px;
+            color:white;
+            width: 240px;
+            text-decoration: none;
+            background-color: crimson;
+            border-radius:4px;
+            display: block;
+            margin:auto;
+                 }
+                 #section-2 #middle-section p,#section-2 #middle-section h4{
+            text-align: center;
+            padding:20px;
+            margin:auto;
+            width:100%;
+        }
+         #section-2 h4{
+          font-size: 1.5em;
+         }
+        #middle-section p{
+
+          width:80%;
+       
+        }
+        #space{
+          height: 10px;
+        }
+        #section-2-header p{
+            margin:auto;
+            width:100%;
+}
+    </style>
+    <body>
+    <div class="cover-p">
+      <div class="parl"><img src="alexander-schimmeck-pKSm8hV62eI-unsplash.jpg"></div>
+     </div> 
+     <main> 
+       <header> 
+       <h2> Employable</h2>
+       <nav class="navi">
+           <ul>
+               <li><a href="#">Sign in</a></li><!--
+            --><li><a href="#">Employers/Post a job</a></li><!--
+            --><li><a href="#">Case Studies</a></li><!--
+            --><li><a href="#">About</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Pricing</a></li>
+           </ul>
+       </nav>
+       <div id="nav2">  
+            <a href="#">Sign in</a><!--
+            --><a href="#">Employers/Post a job</a><!--
+            --><a href="#">Case Studies</a><!--
+            --><br/>
+            <div id="space"></div>
+            <a href="#">About</a>
+            <a href="#">Blog</a>
+            <a href="#">Pricing</a>
+       </div>
+     </header> 
+
+     <section id="first-sections">    
+      <div class="landing"> 
+      <h4>  Get a job instantly</h4>
+
+      <p> start chatting with hospitality resturant and retail employers in minutes</p>
+      <a class="a-first" href=" ">Get started for free</a>
+       <div></div>
+     </section>
+      <section id="section-2">
+      <div id="section-2-header">
+        <h4><span class="color1">fastest way </span ><span class="color2">to get a job</span></h4>
+        <p>On Employable, you can create a profile, apply to hundreds of jobs and chat with employers all within 5 minutes</p>
+            
+      </div>
+        <div id="middle-section">
+          <div id="div1">
+            <img src="no-more-resumes.png" alt="">
+          </div>
+            <div id="div2">
+              <h4><span class="color1">No more <span class="color2">resumes</span></h4>
+
+              <p>Create a JobGet profile in less than 60 seconds.
+No more long resumes, cover letters or forms.</p>
+               <div class="a-d">
+<a class="a" href="">GET STARTED NOW</a>
+               </div>
+            </div>
+            <div id="div3">
+              <h4><span class="color1">Apply with <span class="color2">1Click</span></h4>
+              <p>Search for jobs close to home and apply with 1-click.It's that simple</p>
+                <div class="a-d">
+                <a class="a" href="">FIND YOU JOB</a>
+                </div>
+            </div>
+          <div id="div4">
+            <img src="map.png" alt="">
+          </div>
+          <div id="div5">
+            <img src="chat.png" alt="">
+          </div>
+           <div id="div6">
+              <h4><span class="color1">Chat <span class="color2">with employers</span></h4>
+              <p>Start chatting with employers. No more wating for emails, hear back instantly</p>
+                <div class="a-d">
+                <a class="a" href="">GET STARTED NOW</a>
+            </div>
+            </div>
+        </div>
+
+    </section>
+   <footer > 
+    
+   <div class="row">
+     <div class="col s12 m6 l6">
+      <h5>  Employable</h5>
+      <div> <a href=" ">Privacy & Policy</a></div>
+      <div> <a href=" ">Terms & Conditions</a></div>
+      <div> <a href=" ">Accessibility Policy</a></div>
+      <div> <a href=" ">Blog</a></div>
+      <div> <a href=" ">Careers</a></div>
+    </div>
+    <div class="col s12 m6 l6">
+      <h5>  Popular Job Industries</h5>
+      <div> <a href=" ">Retail jobs</a></div>
+      <div> <a href=" ">Part time jobs</a></div>
+      <div> <a href=" ">Travel jobs</a></div>
+      <div> <a href=" ">Admin jobs</a></div>
+    </div>
+        <div class="col s12 m6 l6">
+      <h5>  Popular Job Searches</h5>
+      <div> <a href=" ">Hotel jobs</a></div>
+      <div> <a href=" ">Bank jobs</a></div>
+      <div> <a href=" ">Nanny jobs</a></div>
+      <div> <a href=" ">Security jobs</a></div>
+    </div>
+     <div class="col s12 m6 l6">
+      <h5>  Contact</h5>
+      <div> <a href=" ">Rangers Avenue</a></div>
+      <div> <a href=" ">New Layout</a></div>
+      <div> <a href=" ">Enugu</a></div>
+      <div> <a href=" ">info@Employable.com</a></div>
+    </div>
+    
+  </div>
+</footer>
+
+   
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+            <script type="text/javascript">
+            	document.addEventListener('DOMContentLoaded', function() {
+    var elems = document.querySelectorAll('.parallax');
+    var instances = M.Parallax.init(elems, 0);
+  });
+            </script>
+    </body>
+</html>
